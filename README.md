@@ -3,18 +3,23 @@
 To distribute your app with Electron, the folder containing your app should be named app and placed under Electron’s resources directory (on OS X it is Electron.app/Contents/Resources/ and on Linux and Windows it is resources/), like this:
 
 On OS X:
+
 '''sh
 electron/Electron.app/Contents/Resources/app/
 ├── package.json
 ├── main.js
 └── index.html
+'''
+
 On Windows and Linux:
 
+'''sh
 electron/resources/app
 ├── package.json
 ├── main.js
 └── index.html
 '''
+
 Then execute Electron.app (or electron on Linux, electron.exe on Windows), and Electron will start as your app. The electron directory will then be your distribution to deliver to final users.
 
 >Packaging Your App into a File
@@ -24,6 +29,7 @@ Apart from shipping your app by copying all of its source files, you can also pa
 To use an asar archive to replace the app folder, you need to rename the archive to app.asar, and put it under Electron’s resources directory like below, and Electron will then try to read the archive and start from it.
 
 >On OS X:
+
 '''sh
 electron/Electron.app/Contents/Resources/
 └── app.asar
@@ -32,6 +38,7 @@ On Windows and Linux:
 electron/resources/
 └── app.asar
 '''
+
 More details can be found in Application packaging.
 
 Rebranding with Downloaded Binaries
@@ -49,6 +56,7 @@ Electron.app/Contents/Frameworks/Electron Helper.app/Contents/Info.plist
 You can also rename the helper app to avoid showing Electron Helper in the Activity Monitor, but make sure you have renamed the helper app’s executable file’s name.
 
 The structure of a renamed app would be like:
+
 '''sh
 MyApp.app/Contents
 ├── Info.plist
@@ -67,7 +75,8 @@ MyApp.app/Contents
         ├── Info.plist
         └── MacOS/
             └── MyApp Helper
-  '''
+'''
+  
 >Linux
 You can rename the electron executable to any name you like.
 
