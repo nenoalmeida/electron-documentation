@@ -4,21 +4,21 @@ To distribute your app with Electron, the folder containing your app should be n
 
 On OS X:
 
-'''sh
+```sh
 electron/Electron.app/Contents/Resources/app/
 ├── package.json
 ├── main.js
 └── index.html
-'''
+```
 
 On Windows and Linux:
 
-'''sh
+```sh
 electron/resources/app
 ├── package.json
 ├── main.js
 └── index.html
-'''
+```
 
 Then execute Electron.app (or electron on Linux, electron.exe on Windows), and Electron will start as your app. The electron directory will then be your distribution to deliver to final users.
 
@@ -30,14 +30,17 @@ To use an asar archive to replace the app folder, you need to rename the archive
 
 >On OS X:
 
-'''sh
+```sh
 electron/Electron.app/Contents/Resources/
 └── app.asar
+```
+
 On Windows and Linux:
 
+```sh
 electron/resources/
 └── app.asar
-'''
+```
 
 More details can be found in Application packaging.
 
@@ -57,7 +60,7 @@ You can also rename the helper app to avoid showing Electron Helper in the Activ
 
 The structure of a renamed app would be like:
 
-'''sh
+```sh
 MyApp.app/Contents
 ├── Info.plist
 ├── MacOS/
@@ -75,7 +78,7 @@ MyApp.app/Contents
         ├── Info.plist
         └── MacOS/
             └── MyApp Helper
-'''
+```
   
 >Linux
 You can rename the electron executable to any name you like.
