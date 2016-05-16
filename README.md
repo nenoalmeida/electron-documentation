@@ -22,13 +22,13 @@ electron/resources/app
 
 Then execute Electron.app (or electron on Linux, electron.exe on Windows), and Electron will start as your app. The electron directory will then be your distribution to deliver to final users.
 
->Packaging Your App into a File
+* Packaging Your App into a File
 
 Apart from shipping your app by copying all of its source files, you can also package your app into an asar archive to avoid exposing your app’s source code to users.
 
 To use an asar archive to replace the app folder, you need to rename the archive to app.asar, and put it under Electron’s resources directory like below, and Electron will then try to read the archive and start from it.
 
->On OS X:
+On OS X:
 
 ```sh
 electron/Electron.app/Contents/Resources/
@@ -48,10 +48,10 @@ Rebranding with Downloaded Binaries
 
 After bundling your app into Electron, you will want to rebrand Electron before distributing it to users.
 
->Windows
+Windows
 You can rename electron.exe to any name you like, and edit its icon and other information with tools like rcedit.
 
->OS X
+OS X
 You can rename Electron.app to any name you want, and you also have to rename the CFBundleDisplayName, CFBundleIdentifier and CFBundleName fields in following files:
 
 Electron.app/Contents/Info.plist
@@ -80,10 +80,10 @@ MyApp.app/Contents
             └── MyApp Helper
 ```
   
->Linux
+Linux
 You can rename the electron executable to any name you like.
 
->Rebranding by Rebuilding Electron from Source
+Rebranding by Rebuilding Electron from Source
 
 It is also possible to rebrand Electron by changing the product name and building it from source. To do this you need to modify the atom.gyp file and have a clean rebuild.
 
