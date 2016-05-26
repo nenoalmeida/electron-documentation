@@ -226,22 +226,29 @@ OS X
 $ ./Electron.app/Contents/MacOS/Electron your-app/
 Electron.app here is part of the Electron’s release package, you can download it from here.
 
+
 Run as a distribution
 After you’re done writing your app, you can create a distribution by following the Application Distribution guide and then executing the packaged app.
 
+
 Try this Example
 Clone and run the code in this tutorial by using the atom/electron-quick-start repository.
+
 
 Note: Running this requires Git and Node.js (which includes npm) on your system.
 
  Clone the repository
 > git clone https://github.com/electron/electron-quick-start
 
+ 
  Go into the repository
+
 
 > cd electron-quick-start
 
+
 Install dependencies and run the app
+
 
 > npm install && npm start
 
