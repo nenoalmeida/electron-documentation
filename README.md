@@ -1,6 +1,8 @@
 # Application Distribution
 
+
 To distribute your app with Electron, the folder containing your app should be named app and placed under Electron’s resources directory (on OS X it is Electron.app/Contents/Resources/ and on Linux and Windows it is resources/), like this:
+
 
 On OS X:
 
